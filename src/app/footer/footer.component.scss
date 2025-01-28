@@ -12,10 +12,9 @@ footer {
     align-items: center;
 
     .imageBox {
-
       inline-size: 35px;
       block-size: 35px;
-      margin-left: .5rem;
+      margin-inline-end: 0.5rem;
 
       img {
         inline-size: 100%;
@@ -48,20 +47,9 @@ footer {
     flex-direction: column;
 
     .dateContainer {
-
       display: flex;
-    }
 
-    p {
-      color: var(--light-gray-color);
-      font-size: 13px;
-
-    }
-
-    .dateContainer {
       .bullet {
-
-
         background-color: #E8E8E8;
         inline-size: 10px;
         block-size: 10px;
@@ -70,11 +58,31 @@ footer {
       }
     }
 
+    p {
+      color: var(--light-gray-color);
+      font-size: 13px;
+    }
+
     .date {
       color: #000;
       margin: 4px 3px 0 3px;
     }
   }
 
+  :dir(ltr) & {
+    .auther {
+      .imageBox {
+        margin-inline-end: 0;
+        margin-inline-start: 0.5rem;
+      }
+    }
 
+    .dateBox {
+      .dateContainer {
+        .bullet {
+          margin: 4px 4px;
+        }
+      }
+    }
+  }
 }
