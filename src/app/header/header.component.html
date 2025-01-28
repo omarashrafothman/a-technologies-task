@@ -1,0 +1,90 @@
+<div class="header">
+
+  <div class="container">
+    <div class="top">
+
+      <div class="right">
+        <h2>012345678910</h2>
+        <app-main-btn></app-main-btn>
+
+      </div>
+      <div class="left">
+        <button type="button" (click)="toggleMenu()"><i class="fa-solid fa-ellipsis"></i></button>
+      </div>
+      <div class="menu" [class.open]="isMenuOpen" [class.closed]="!isMenuOpen">
+        <ul>
+          <li>
+            <i class="fa-solid fa-pen"></i>
+            تعديل الرقم
+          </li>
+          <li class="exiteItem">
+
+            <i class="fa-solid fa-trash"></i>
+
+            إلغاء التعيين
+          </li>
+        </ul>
+
+      </div>
+
+
+    </div>
+    <div class="bottom">
+      <div class="detailsItem">
+        <p>اسم البروتوكول</p>
+        <h4>فودافون مصر</h4>
+      </div>
+      <div class="detailsItem">
+        <p>الدولة</p>
+        <div class="dataWithImage">
+          <img src="Flag-removebg.png" alt="country" />
+          <h4>المملكة الأردنيه الهاشمية</h4>
+
+        </div>
+      </div>
+
+
+      <div class="detailsItem">
+        <p>العميل الحالى</p>
+        <div class="dataWithImage">
+          <img src="company.png" alt="country" />
+          <h4>...الشركة الألمانيه لإبادة</h4>
+
+        </div>
+      </div>
+
+
+      <div class="detailsItem">
+        <p>عدد الامتدادات</p>
+        <h4>09</h4>
+      </div>
+
+      <div class="detailsItem">
+        <p>تاريخ اخر شحنه </p>
+        <h4>2024/12/29</h4>
+      </div>
+      <div class="detailsItem">
+        <p>الرصيد الحالى</p>
+        <h4>5000 ج.م</h4>
+      </div>
+      <div class="detailsItem">
+        <p>الرصيد المستخدم للعميل الحالى</p>
+        <h4>5000 ج.م</h4>
+      </div>
+
+
+      <div class="detailsItem">
+        <p>الرصيد المستخدم للرقم ككل</p>
+        <h4>5000 ج.م</h4>
+      </div>
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+</div>
